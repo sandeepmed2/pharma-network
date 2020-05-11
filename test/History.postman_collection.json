@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "a1afb586-1cbf-4b89-bfaa-654d8754b517",
+		"name": "History",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CheckDrugHistory",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "organizationName",
+							"value": "Consumer",
+							"type": "text"
+						},
+						{
+							"key": "drugName",
+							"value": "Paracetamol",
+							"type": "text"
+						},
+						{
+							"key": "serialNo",
+							"value": "001",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/viewHistory",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"viewHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ViewDrugState",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "organizationName",
+							"value": "Consumer",
+							"type": "text"
+						},
+						{
+							"key": "drugName",
+							"value": "Paracetamol",
+							"type": "text"
+						},
+						{
+							"key": "serialNo",
+							"value": "001",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/viewDrugCurrentState",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"viewDrugCurrentState"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
